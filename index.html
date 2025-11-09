@@ -1,160 +1,110 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Community</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relevant Articles Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="layout">
-    <aside class="sidebar">
-        <header class="brand">
-            <h1>Dev</h1>
-        </header>
-        <nav class="logo-list" aria-label="Navegacion de logos">
-            <a class="logo" href="#" title="Dev Community">DEV</a>
-            <a class="logo" href="#" title="Gamer Forem">GG</a>
-            <a class="logo" href="#" title="Open Forem">OF</a>
-            <a class="logo" href="#" title="Music Forem">MF</a>
-            <a class="logo" href="#" title="Vide Coding Forem">VCF</a>
-            <a class="logo" href="#" title="Pop Corn Movies And Tv">PCMTV</a>
-            <a class="logo" href="#" title="Dumb DEV Community">DDC</a>
-            <a class="logo" href="#" title="Design Communnity">DC</a>
+<body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img src="iconos/devicon.jpg" alt="DEV" height="40">
+        </div>
+        <form class="search-form" action="#">
+          <input type="search" placeholder="Search..." aria-label="Search">
+        </form>
+        <div class="nav-actions">
+          <a href="#" class="nav-btn">Log in</a>
+          <a href="#" class="nav-btn primary">Create account</a>
+        </div>
+      </nav>
+    </header>
+    <div class="layout">
+      <aside class="sidebar-left">
+        <ul class="icon-list">
+          <li><a href="#"><img src="iconos/devicon.jpg" alt="DEV"></a></li>
+          <li><a href="#"><img src="iconos/gamerforem.jpg" alt="GitHub"></a></li>
+          <li><a href="#"><img src="iconos/twitter.svg" alt="Twitter"></a></li>
+          <li><a href="#"><img src="iconos/stack.svg" alt="Stack Overflow"></a></li>
+          <li><a href="#"><img src="iconos/golf.svg" alt="Golf"></a></li>
+          <li><a href="#"><img src="iconos/vibe.svg" alt="Vibe"></a></li>
+        </ul>
+      </aside>
+      <aside class="sidebar-welcome">
+        <div class="welcome-box">
+          <h2>DEV Community is a community of <span class="highlight">3,571,611</span> amazing developers</h2>
+          <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+          <a href="#" class="create-account-btn">Create account</a>
+          <a href="#" class="login-btn">Log in</a>
+        </div>
+        <nav class="sidebar-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">DEV++</a></li>
+            <li><a href="#">Podcasts</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">DEV Education Tracks</a></li>
+            <li><a href="#">DEV Challenges</a></li>
+          </ul>
         </nav>
-    </aside>
-
-    <main class="main-area">
-        <header class="topbar">
-            <a class="dev-logo" href="#" aria-label="DEV home">DEV</a>
-
-            <form class="search-wrap" role="search">
-                <svg class="icon-search" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 15a5 5 0 110-10 5 5 0 010 10z"/>
-                </svg>
-                <input type="search" placeholder="Search..." aria-label="Buscar" />
-                <span class="algolia">Powered by Algolia</span>
-            </form>
-
-            <nav class="auth">
-                <a class="login" href="#">Log in</a>
-                <button class="btn create">Create account</button>
-            </nav>
-        </header>
-
-        <section class="content">
-            <section class="feed">
-                <h2>Relevant Latest Tap</h2>
-
-                <article class="card">
-                    <div class="card-meta">
-                        <span class="author">Autor 1</span>
-                        <span class="dot">•</span>
-                        <time>2 dias</time>
-                    </div>
-                    <h3>Titulo del Articulo 1</h3>
-                    <p>Resumen breve del articulo 1 para mostrar la estructura de la tarjeta.</p>
-                    <a class="read-more" href="#">Leer mas</a>
-                </article>
-
-                <article class="card">
-                    <div class="card-meta">
-                        <span class="author">Autor 2</span>
-                        <span class="dot">•</span>
-                        <time>5 dias</time>
-                    </div>
-                    <h3>Titulo del Articulo 2</h3>
-                    <p>Resumen breve del articulo 2. Puede incluir etiquetas o extracto.</p>
-                    <a class="read-more" href="#">Leer mas</a>
-                </article>
-                
-                <article class="card">
-                    <div class="card-meta">
-                        <span class="author">Autor 3</span>
-                        <span class="dot">•</span>
-                        <time>1 semana</time>
-                    </div>
-                    <h3>Titulo del Articulo 3</h3>
-                    <p>Resumen breve del articulo 3. Este es un ejemplo adicional para mostrar más contenido.</p>
-                    <a class="read-more" href="#">Leer mas</a>
-                </article>
-                
-                <article class="card">
-                    <div class="card-meta">
-                        <span class="author">Autor 4</span>
-                        <span class="dot">•</span>
-                        <time>3 semanas</time>
-                    </div>
-                    <h3>Titulo del Articulo 4</h3>
-                    <p>Resumen breve del articulo 4. Este es otro ejemplo para completar el diseño.</p>
-                    <a class="read-more" href="#">Leer mas</a>
-                </article>
-
-            </section>
-            
-            <aside class="submenu">
-                <h3>d</h3>
-                <ul class="submenu-list">
-                    <li class="submenu-item">
-                        <a href="#">
-                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                            </svg>
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="submenu-item">
-                        <a href="#">
-                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                            </svg>
-                            Lecturas
-                        </a>
-                    </li>
-                    <li class="submenu-item">
-                        <a href="#">
-                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
-                            </svg>
-                            Listas
-                        </a>
-                    </li>
-                    <li class="submenu-item">
-                        <a href="#">
-                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                            </svg>
-                            Podcasts
-                        </a>
-                    </li>
-                    <li class="submenu-item">
-                        <a href="#">
-                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"/>
-                            </svg>
-                            Videos
-                        </a>
-                    </li>
-                </ul>
-                
-                <section class="trending-tags">
-                    <h3>Etiquetas Populares</h3>
-                    <ul class="tags">
-                        <li><a href="#" class="tag">#javascript</a></li>
-                        <li><a href="#" class="tag">#webdev</a></li>
-                        <li><a href="#" class="tag">#beginners</a></li>
-                        <li><a href="#" class="tag">#programming</a></li>
-                        <li><a href="#" class="tag">#tutorial</a></li>
-                        <li><a href="#" class="tag">#react</a></li>
-                        <li><a href="#" class="tag">#python</a></li>
-                        <li><a href="#" class="tag">#productivity</a></li>
-                    </ul>
-                </section>
-            </aside>
+      </aside>
+      <main class="main-content">
+        <section class="tabs-section">
+          <nav class="tabs">
+            <a href="#" class="tab active">Relevant</a>
+            <a href="#" class="tab">Latest</a>
+            <a href="#" class="tab">Top</a>
+          </nav>
         </section>
-
-        <footer class="site-footer">
-            <p>&copy; 2025. Todos los derechos reservados.</p>
-        </footer>
-    </main>
+        <section class="articles-list">
+          <article class="article-card featured" style="background-image: url('iconos/camuda.jpg'); background-size: cover; background-position: center;">
+            <div class="featured-overlay">
+              <h2>Building a Lightweight Camunda Monitoring Dashboard: From Enterprise Pain to Open Source Solution</h2>
+          </article>
+          <article class="article-card">
+            <h2>Flexbox vs Grid: When to Use Each</h2>
+            <div class="card-meta">
+              <span>by <a href="#">John Smith</a></span>
+              <span>· 2024-05-20</span>
+              <span>· <a href="#" class="tag">CSS</a></span>
+              <span>· 5 min read</span>
+            </div>
+            <p>Comparing Flexbox and Grid for modern web layouts. Pros, cons, and practical tips.</p>
+          </article>
+          <article class="article-card">
+            <h2>Semantic HTML for Accessibility</h2>
+            <div class="card-meta">
+              <span>by <a href="#">Alex Lee</a></span>
+              <span>· 2024-05-15</span>
+              <span>· <a href="#" class="tag">Accessibility</a></span>
+              <span>· 4 min read</span>
+            </div>
+            <p>How semantic tags improve accessibility and SEO. Best practices for developers.</p>
+          </article>
+        </section>
+      </main>
+      <aside class="sidebar-right">
+        <div class="discuss-box">
+          <h3>#discuss</h3>
+          <ul class="discuss-list">
+            <li><a href="#">The Real AI Startup Stack: $33M Valuations, $1.2K OpenAI Bills</a><span>1 comment</span></li>
+            <li><a href="#">The Real Reason Developers Hate Meetings (It’s Not Time) 🧠💥</a><span>29 comments</span></li>
+            <li><a href="#">Feeling a bit outdated</a><span>1 comment</span></li>
+            <li><a href="#">Inside My AI Workflow: How I Get Real Work Done With Prompts</a><span>5 comments</span></li>
+            <li><a href="#">The Prompt Layer Most Beginners Miss</a><span>1 comment</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Legal Notice</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Credits</a>
+      </div>
+      <div class="footer-copy">© 2024 Dev Community</div>
+    </footer>
 </body>
 </html>
