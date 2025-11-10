@@ -336,6 +336,62 @@ body {
   font-size: 0.95rem;
   color: #555;
 }
+.icon-item {
+  position: relative;
+}
+.icon-item:hover::after {
+  content: attr(data-name) "\A";
+  white-space: pre;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem 1.7rem 1.2rem;
+  min-width: 120px;
+  z-index: 20;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.2s;
+  display: block;
+  position: absolute;
+  left: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+.icon-item::after {
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+}
+.icon-item:hover::before {
+  content: "Follow";
+  position: absolute;
+  left: 48px;
+  top: calc(50% + 1.2rem);
+  transform: translateY(-50%);
+  background: var(--accent-blue);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 21;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.2s;
+  display: block;
+}
+.icon-item::before {
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+}
 @media (max-width: 1200px) {
   .layout {
     grid-template-columns: 72px 200px 1fr 220px;
