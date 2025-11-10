@@ -1,0 +1,64 @@
+.register-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-logo {
+  width: 64px;
+  margin-bottom: 1.5rem;
+}
+.register-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.register-subtitle {
+  color: #444;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.register-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.register-btn:hover {
+  background: #f3f4f6;
+}
+.register-btn img {
+  width: 24px;
+  height: 24px;
+}
+.register-legal {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  color: #888;
+  font-size: 0.98rem;
+}
+.register-legal a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .register-container {
+    padding: 1rem;
+  }
+}
