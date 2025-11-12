@@ -42,25 +42,97 @@
         <li class="icon-item" data-name="markerforem"><a href="#"><img src="iconos/markerforem.png" alt="markerforem"></a></li>
       </ul>
     </aside>
-    <main class="main-content">
-      <section class="welcome-section">
-        <div class="welcome-box">
-          <img src="iconos/devicon.jpg" alt="DEV" class="welcome-logo">
-          <h1 class="welcome-title">Welcome to DEV Community</h1>
-          <p class="welcome-subtitle">A place for developers to share, stay up-to-date and grow their careers.</p>
-          <a href="register.html" class="create-account-btn">Create account</a>
+
+    <!-- Menú de navegación entre sidebar izquierda y contenido central -->
+    <aside class="middle-nav">
+      <div class="nav-section">
+        <h4>DEV Community</h4>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">DEV++</a>
+          <a href="#" class="nav-link">Podcasts</a>
+          <a href="#" class="nav-link">Videos</a>
+          <a href="#" class="nav-link">DEV Education Tracks</a>
+          <a href="#" class="nav-link">DEV Challenges</a>
         </div>
-      </section>
-      <section class="tabs-section">
-        <nav class="tabs">
-          <a href="#" class="tab active">Relevant</a>
-          <a href="#" class="tab">Latest</a>
-          <a href="#" class="tab">Top</a>
-        </nav>
-      </section>
-      <section class="articles-list">
-        <article class="article-card featured" style="background-image: url('iconos/camuda.jpg'); background-size: cover; background-position: center;">
-          <div class="featured-overlay">
+      </div>
+
+      <div class="nav-section">
+        <h4>Other</h4>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Forem Shop</a>
+          <a href="#" class="nav-link">Advertise on DEV</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+          <a href="#" class="nav-link">Guides</a>
+          <a href="#" class="nav-link">Software comparisons</a>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <h4>Popular Tags</h4>
+        <div class="tags-cloud">
+          <a href="#" class="tag">#javascript</a>
+          <a href="#" class="tag">#webdev</a>
+          <a href="#" class="tag">#beginners</a>
+          <a href="#" class="tag">#programming</a>
+          <a href="#" class="tag">#tutorial</a>
+          <a href="#" class="tag">#react</a>
+          <a href="#" class="tag">#python</a>
+          <a href="#" class="tag">#css</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-layout">
+      <main class="main-content">
+        <section class="welcome-section">
+          <div class="welcome-box">
+            <h1>DEV Community is a community of 3,575,498 amazing developers</h1>
+            <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+            <div class="welcome-actions">
+              <a href="register.html" class="create-account-btn">Create account</a>
+              <a href="login.html" class="login-btn">Log in</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="tabs-section">
+          <nav class="tabs">
+            <a href="#" class="tab active">Relevant</a>
+            <a href="#" class="tab">Latest</a>
+            <a href="#" class="tab">Top</a>
+          </nav>
+        </section>
+
+        <section class="articles-list">
+          <!-- Google AI Banner -->
+          <article class="promo-card">
+            <div class="promo-header">
+              <span class="promo-badge">DEVED</span>
+              <span class="promo-company">Google AI</span>
+            </div>
+            <h2>"BUILD APPS WITH GOOGLE AI STUDIO"</h2>
+            <p>Learn at your own pace, and earn a badge upon completion. Easy!</p>
+          </article>
+
+          <!-- Education Track -->
+          <article class="article-card featured">
+            <h3>Announcing the First DEV Education Track:</h3>
+            <h2>"Build Apps with Google AI Studio"</h2>
+            <div class="card-meta">
+              <span>Jess Lee for The DEV Team</span>
+              <span>· Jul 2</span>
+            </div>
+            <div class="tags">
+              <span class="tag">#learngoogleaistudio</span>
+              <span class="tag">#ai</span>
+              <span class="tag">#deved</span>
+              <span class="tag">#gemini</span>
+            </div>
+          </article>
+
+          <article class="article-card">
             <h2>Building a Lightweight Camunda Monitoring Dashboard: From Enterprise Pain to Open Source Solution</h2>
             <div class="card-meta">
               <span>by <a href="#">Jane Doe</a></span>
@@ -69,30 +141,61 @@
               <span>· 7 min read</span>
             </div>
             <p>Learn how to design a dashboard with dark mode and responsive layout using CSS Grid and Flexbox.</p>
+          </article>
+          
+          <article class="article-card">
+            <h2>Flexbox vs Grid: When to Use Each</h2>
+            <div class="card-meta">
+              <span>by <a href="#">John Smith</a></span>
+              <span>· 2024-05-20</span>
+              <span>· <a href="#" class="tag">CSS</a></span>
+              <span>· 5 min read</span>
+            </div>
+            <p>Comparing Flexbox and Grid for modern web layouts. Pros, cons, and practical tips.</p>
+          </article>
+        </section>
+      </main>
+
+      <aside class="sidebar-right">
+        <div class="sidebar-widget">
+          <h4>Listings</h4>
+          <div class="listing-item">
+            <h5>The 7 Best Programming Languages for Game Development</h5>
+            <p>Game development is one of the most exciting fields in programming...</p>
           </div>
-        </article>
-        <article class="article-card">
-          <h2>Flexbox vs Grid: When to Use Each</h2>
-          <div class="card-meta">
-            <span>by <a href="#">John Smith</a></span>
-            <span>· 2024-05-20</span>
-            <span>· <a href="#" class="tag">CSS</a></span>
-            <span>· 5 min read</span>
+          <div class="listing-item">
+            <h5>Senior Software Engineer at Company</h5>
+            <p>Join our team to build amazing products...</p>
           </div>
-          <p>Comparing Flexbox and Grid for modern web layouts. Pros, cons, and practical tips.</p>
-        </article>
-        <article class="article-card">
-          <h2>Semantic HTML for Accessibility</h2>
-          <div class="card-meta">
-            <span>by <a href="#">Alex Lee</a></span>
-            <span>· 2024-05-15</span>
-            <span>· <a href="#" class="tag">Accessibility</a></span>
-            <span>· 4 min read</span>
+          <a href="#" class="see-all">See all listings</a>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>#help</h4>
+          <div class="help-item">
+            <p>How to deploy a React app to production?</p>
+            <span>5 comments</span>
           </div>
-          <p>How semantic tags improve accessibility and SEO. Best practices for developers.</p>
-        </article>
-      </section>
-    </main>
+          <div class="help-item">
+            <p>Best practices for API security?</p>
+            <span>12 comments</span>
+          </div>
+          <a href="#" class="see-all">See all help threads</a>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>DEV Community</h4>
+          <p>A constructive and inclusive social network for software developers. With you every step of your journey.</p>
+          <div class="community-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </aside>
+    </div>
   </div>
 </body>
 </html>
