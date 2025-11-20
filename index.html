@@ -9,16 +9,16 @@
 <body>
   <header class="header">
     <nav class="navbar">
-      <div class="nav-logo">
+      <section class="nav-logo">
         <img src="iconos/devicon.jpg" alt="DEV" height="40">
-      </div>
+      </section>
       <form class="search-form" action="#">
         <input type="search" placeholder="Search..." aria-label="Search">
       </form>
-      <div class="nav-actions">
+      <section class="nav-actions">
         <a href="login.html" class="nav-btn">Log in</a>
         <a href="register.html" class="nav-btn primary">Create account</a>
-      </div>
+      </section>
     </nav>
   </header>
   <div class="layout-devto">
@@ -41,6 +41,11 @@
         <li class="icon-item" data-name="parenting"><a href="#"><img src="iconos/parenting.png" alt="parenting"></a></li>
         <li class="icon-item" data-name="markerforem"><a href="#"><img src="iconos/markerforem.png" alt="markerforem"></a></li>
       </ul>
+      <section class="sidebar-bottom-icons">
+        <div class="icon-item" data-name="plus" title="Agregar">➕</div>
+        <div class="icon-item" data-name="dots" title="Más opciones">⋯</div>
+      </section>
+      <section class="icon-tooltip" id="icon-tooltip" style="display:none;"></section>
     </aside>
     <aside class="sidebar-center">
       <section class="welcome-box">
@@ -51,14 +56,88 @@
       </section>
       <nav class="sidebar-menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">DEV++</a></li>
-          <li><a href="#">Podcasts</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">DEV Education Tracks</a></li>
-          <li><a href="#">DEV Challenges</a></li>
+          <li><a href="#">🏠 Home</a></li>
+          <li><a href="#">🧩 DEV++</a></li>
+          <li><a href="#">🎙️ Podcasts</a></li>
+          <li><a href="#">🎬 Videos</a></li>
+          <li><a href="#">🎓 DEV Education Tracks</a></li>
+          <li><a href="#">🏆 DEV Challenges</a></li>
+          <li><a href="#">💡 DEV Help</a></li>
+          <li><a href="#">❤️ Advertise on DEV</a></li>
+          <li><a href="#">✨ DEV Showcase</a></li>
+          <li><a href="#">😎 About</a></li>
+          <li><a href="#">🔍 Contact</a></li>
+          <li><a href="#">🐘 Free Postgres Database</a></li>
+          <li><a href="#">🤔 Software comparisons</a></li>
+          <li><a href="#">🛍️ Forem Shop</a></li>
         </ul>
       </nav>
+      <section class="sidebar-other">
+        <strong>Other</strong>
+        <ul>
+          <li><a href="#">👍 Code of Conduct</a></li>
+          <li><a href="#">🤓 Privacy Policy</a></li>
+          <li><a href="#">👀 Terms of Use</a></li>
+        </ul>
+        <nav class="sidebar-social">
+          <a href="#" title="X"><span style="font-size:1.3em;">✖️</span></a>
+          <a href="#" title="Facebook"><span style="font-size:1.3em;">📘</span></a>
+          <a href="#" title="GitHub"><span style="font-size:1.3em;">🐙</span></a>
+          <a href="#" title="Instagram"><span style="font-size:1.3em;">📸</span></a>
+          <a href="#" title="Twitch"><span style="font-size:1.3em;">🎮</span></a>
+          <a href="#" title="Mastodon"><span style="font-size:1.3em;">🐘</span></a>
+          <a href="#" title="Butterfly"><span style="font-size:1.3em;">🦋</span></a>
+        </nav>
+      </section>
+      <section class="sidebar-tags">
+        <strong>Popular Tags</strong>
+        <ul>
+          <li>#webdev</li>
+          <li>#ai</li>
+          <li>#programming</li>
+          <li>#blockchain</li>
+          <li>#productivity</li>
+          <li>#architecture</li>
+          <li>#javascript</li>
+          <li>#cloud</li>
+          <li>#web3</li>
+          <li>#career</li>
+          <li>#beginners</li>
+          <li>#python</li>
+          <li>#tutorial</li>
+        </ul>
+      </section>
+      <section class="diamond-sponsors">
+        <strong class="diamond-title">💎 DEV Diamond Sponsors</strong>
+        <p class="diamond-desc">Thank you to our Diamond Sponsors for supporting the DEV Community</p>
+        <div class="sponsor-block">
+          <img src="Iconos/devimage.png" alt="Google AI" class="sponsor-img">
+          <p class="sponsor-text">Google AI is the official AI Model and Platform Partner of DEV</p>
+        </div>
+        <div class="sponsor-block">
+          <img src="Iconos/devimage.png" alt="Neon" class="sponsor-img">
+          <p class="sponsor-text">Neon is the official database partner of DEV</p>
+        </div>
+        <div class="sponsor-block">
+          <img src="Iconos/algolia.png" alt="Algolia" class="sponsor-img">
+          <p class="sponsor-text">Algolia is the official search partner of DEV</p>
+        </div>
+      </section>
+      <section class="dev-community-card">
+        <div class="community-card">
+          <div class="community-header">
+            <span>DEV Community</span>
+            <span class="community-dots">⋯</span>
+          </div>
+          <h2 class="community-title">Easiest way to help the DEV community feel more like a community?</h2>
+          <p>Head over to our <a href="#">Welcome Thread</a> greet some new DEV members!</p>
+        </div>
+        <div class="community-footer">
+          <p><a href="#" class="footer-link">Future</a> A space to discuss and keep up software development and manage your software career</p>
+          <p>Built on <a href="#" class="footer-link">Forem</a> — the open source software that powers <a href="#" class="footer-link">DEV</a> and other inclusive communities.</p>
+          <p>Made with love and <a href="#" class="footer-link">Ruby on Rails</a>.<br>Future © 2016 - 2025.</p>
+        </div>
+      </section>
     </aside>
     <main class="main-content">
       <nav class="tabs">
