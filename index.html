@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dev</title>
+  <title>Dev Community</title>
+  <link rel="icon" href="iconos/devicon.jpg" type="image/jpeg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
       </section>
     </nav>
   </header>
-  <div class="layout-devto">
+  <main class="layout-devto">
     <aside class="sidebar-left">
       <ul class="icon-list">
         <li class="icon-item" data-name="DEV"><a href="#"><img src="iconos/devicon.jpg" alt="DEV"></a></li>
@@ -31,21 +32,19 @@
         <li class="icon-item" data-name="musicforem"><a href="#"><img src="iconos/musicforem.png" alt="musicforem"></a></li>
         <li class="icon-item" data-name="vibecodingforem"><a href="#"><img src="iconos/vibecodingforem.png" alt="vibecodingforem"></a></li>
         <li class="icon-item" data-name="popcornmoviestv"><a href="#"><img src="iconos/popcornmoviestv.png" alt="popcornmoviestv"></a></li>
-        <li class="icon-item" data-name="dumbdev"><a href="#"><img src="iconos/dumbdev.png" alt="dumbdev"></a></li>
         <li class="icon-item" data-name="desingcommunity"><a href="#"><img src="iconos/desingcommunity.png" alt="desingcommunity"></a></li>
         <li class="icon-item" data-name="golfforem"><a href="#"><img src="iconos/golfforem.png" alt="golfforem"></a></li>
         <li class="icon-item" data-name="securityforem"><a href="#"><img src="iconos/securityforem.png" alt="securityforem"></a></li>
         <li class="icon-item" data-name="scaleforem"><a href="#"><img src="iconos/scaleforem.png" alt="scaleforem"></a></li>
         <li class="icon-item" data-name="foremcore"><a href="#"><img src="iconos/foremcore.png" alt="foremcore"></a></li>
         <li class="icon-item" data-name="cryptoforem"><a href="#"><img src="iconos/cryptoforem.png" alt="cryptoforem"></a></li>
-        <li class="icon-item" data-name="parenting"><a href="#"><img src="iconos/parenting.png" alt="parenting"></a></li>
-        <li class="icon-item" data-name="markerforem"><a href="#"><img src="iconos/markerforem.png" alt="markerforem"></a></li>
       </ul>
       <section class="sidebar-bottom-icons">
-        <div class="icon-item" data-name="plus" title="Agregar">➕</div>
-        <div class="icon-item" data-name="dots" title="Más opciones">⋯</div>
+        <span class="icon-item" data-name="plus" title="Agregar">➕</span>
+        <span class="icon-item" data-name="dots" title="Más opciones">⋯</span>
       </section>
-      <section class="icon-tooltip" id="icon-tooltip" style="display:none;"></section>
+      <section class="icon-tooltip" id="icon-tooltip"></section>
+      <section class="sidebar-tooltip" id="sidebar-tooltip"></section>
     </aside>
     <aside class="sidebar-center">
       <section class="welcome-box">
@@ -80,13 +79,13 @@
           <li><a href="#">👀 Terms of Use</a></li>
         </ul>
         <nav class="sidebar-social">
-          <a href="#" title="X"><span style="font-size:1.3em;">✖️</span></a>
-          <a href="#" title="Facebook"><span style="font-size:1.3em;">📘</span></a>
-          <a href="#" title="GitHub"><span style="font-size:1.3em;">🐙</span></a>
-          <a href="#" title="Instagram"><span style="font-size:1.3em;">📸</span></a>
-          <a href="#" title="Twitch"><span style="font-size:1.3em;">🎮</span></a>
-          <a href="#" title="Mastodon"><span style="font-size:1.3em;">🐘</span></a>
-          <a href="#" title="Butterfly"><span style="font-size:1.3em;">🦋</span></a>
+          <a href="#" title="X"><span class="social-emoji">✖️</span></a>
+          <a href="#" title="Facebook"><span class="social-emoji">📘</span></a>
+          <a href="#" title="GitHub"><span class="social-emoji">🐙</span></a>
+          <a href="#" title="Instagram"><span class="social-emoji">📸</span></a>
+          <a href="#" title="Twitch"><span class="social-emoji">🎮</span></a>
+          <a href="#" title="Mastodon"><span class="social-emoji">🐘</span></a>
+          <a href="#" title="Butterfly"><span class="social-emoji">🦋</span></a>
         </nav>
       </section>
       <section class="sidebar-tags">
@@ -110,33 +109,33 @@
       <section class="diamond-sponsors">
         <strong class="diamond-title">💎 DEV Diamond Sponsors</strong>
         <p class="diamond-desc">Thank you to our Diamond Sponsors for supporting the DEV Community</p>
-        <div class="sponsor-block">
+        <section class="sponsor-block">
           <img src="Iconos/devimage.png" alt="Google AI" class="sponsor-img">
           <p class="sponsor-text">Google AI is the official AI Model and Platform Partner of DEV</p>
-        </div>
-        <div class="sponsor-block">
+        </section>
+        <section class="sponsor-block">
           <img src="Iconos/devimage.png" alt="Neon" class="sponsor-img">
           <p class="sponsor-text">Neon is the official database partner of DEV</p>
-        </div>
-        <div class="sponsor-block">
+        </section>
+        <section class="sponsor-block">
           <img src="Iconos/algolia.png" alt="Algolia" class="sponsor-img">
           <p class="sponsor-text">Algolia is the official search partner of DEV</p>
-        </div>
+        </section>
       </section>
       <section class="dev-community-card">
-        <div class="community-card">
-          <div class="community-header">
+        <article class="community-card">
+          <header class="community-header">
             <span>DEV Community</span>
             <span class="community-dots">⋯</span>
-          </div>
+          </header>
           <h2 class="community-title">Easiest way to help the DEV community feel more like a community?</h2>
           <p>Head over to our <a href="#">Welcome Thread</a> greet some new DEV members!</p>
-        </div>
-        <div class="community-footer">
+        </article>
+        <footer class="community-footer">
           <p><a href="#" class="footer-link">Future</a> A space to discuss and keep up software development and manage your software career</p>
           <p>Built on <a href="#" class="footer-link">Forem</a> — the open source software that powers <a href="#" class="footer-link">DEV</a> and other inclusive communities.</p>
           <p>Made with love and <a href="#" class="footer-link">Ruby on Rails</a>.<br>Future © 2016 - 2025.</p>
-        </div>
+        </footer>
       </section>
     </aside>
     <main class="main-content">
@@ -147,35 +146,35 @@
       </nav>
       <section class="articles-list">
         <article class="article-card featured">
-          <div class="featured-overlay">
+          <section class="featured-overlay">
             <h2>Building a Lightweight Camunda Monitoring Dashboard: From Enterprise Pain to Open Source Solution</h2>
-            <div class="card-meta">
+            <section class="card-meta">
               <span>by <a href="#">Jane Doe</a></span>
               <span>· 2024-06-01</span>
               <span>· <a href="#" class="tag">UI/UX</a></span>
               <span>· 7 min read</span>
-            </div>
+            </section>
             <p>Learn how to design a dashboard with dark mode and responsive layout using CSS Grid and Flexbox.</p>
-          </div>
+          </section>
         </article>
         <article class="article-card">
           <h2>Flexbox vs Grid: When to Use Each</h2>
-          <div class="card-meta">
+          <section class="card-meta">
             <span>by <a href="#">John Smith</a></span>
             <span>· 2024-05-20</span>
             <span>· <a href="#" class="tag">CSS</a></span>
             <span>· 5 min read</span>
-          </div>
+          </section>
           <p>Comparing Flexbox and Grid for modern web layouts. Pros, cons, and practical tips.</p>
         </article>
         <article class="article-card">
           <h2>Semantic HTML for Accessibility</h2>
-          <div class="card-meta">
+          <section class="card-meta">
             <span>by <a href="#">Alex Lee</a></span>
             <span>· 2024-05-15</span>
             <span>· <a href="#" class="tag">Accessibility</a></span>
             <span>· 4 min read</span>
-          </div>
+          </section>
           <p>How semantic tags improve accessibility and SEO. Best practices for developers.</p>
         </article>
       </section>
@@ -183,12 +182,12 @@
     <aside class="sidebar-right">
       <section class="widget-box">
         <h3>What's happening this week</h3>
-        <div class="widget-content">
+        <section class="widget-content">
           <strong>Challenges 🧠</strong>
           <p>Just Launched!</p>
           <a href="#">Join the AI Agents Intensive Course Writing Challenge with Google and Kaggle!</a>
           <p>Course runs from November 10-14.</p>
-        </div>
+        </section>
       </section>
       <section class="widget-box">
         <h3>#discuss</h3>
@@ -201,6 +200,8 @@
         </ul>
       </section>
     </aside>
-  </div>
+  </main>
+  <script src="sidebar-tooltip.js"></script>
+  <script src="tabs.js"></script>
 </body>
 </html>
